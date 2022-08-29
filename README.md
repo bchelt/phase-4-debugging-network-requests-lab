@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: After attempting to add a toy, I checked the terminal running the backend and saw that the create method used Toys instead of Toy.
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: After clicking the like button, react had an error because it did not receive the promise so the json() function cause it to break. That meant I needed to return the updated toy as json.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: After clicking the donate button, I checked the terminal running the backend because nothing happened on the frontend. The terminal told me that no route matched destroy so I added destroy to the routes to make it work.
